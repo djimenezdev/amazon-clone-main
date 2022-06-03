@@ -12,7 +12,7 @@ const stripe = require('stripe')(config.stripe.secret);
 const app = express();
 
 //Middlewares
-app.use(cors({ origin: 'https://clone-stripe.web.app/' }));
+app.use(cors({ origin: 'https://clone-stripe.web.app' }));
 app.use(express.json());
 
 //API Routes
